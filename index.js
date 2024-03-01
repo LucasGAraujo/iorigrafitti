@@ -48,22 +48,22 @@ function changeColor(color) {
         var novoCaminho = "img/gamex.png";
         imagem.src = novoCaminho;
         var imagemgamex1 = document.getElementById("altera1");
-        var novoCaminho = "gamex/gamex1.png";
+        var novoCaminho = "gamex/gamexu.png";
         imagemgamex1.src = novoCaminho;
         var imagemgamex2 = document.getElementById("altera2");
-        var novoCaminho = "gamex/gamex2.png";
+        var novoCaminho = "gamex/gamexu2.png";
         imagemgamex2.src = novoCaminho;
         var imagemgamex3 = document.getElementById("altera3");
         var novoCaminho = "gamex/gamex3.png";
         imagemgamex3.src = novoCaminho;
         var imagemgamex4 = document.getElementById("altera4");
-        var novoCaminho = "gamex/gamex4.png";
+        var novoCaminho = "gamex/gamexu3.png";
         imagemgamex4.src = novoCaminho;
         var imagemgamex5 = document.getElementById("altera5");
-        var novoCaminho = "gamex/gamex5.png";
+        var novoCaminho = "gamex/gamexu4.png";
         imagemgamex5.src = novoCaminho;
         var imagemgamex6 = document.getElementById("altera6");
-        var novoCaminho = "gamex/gamex6.png";
+        var novoCaminho = "gamex/gamexu5.png";
         imagemgamex6.src = novoCaminho;
         var imagemgamex7 = document.getElementById("altera7");
         var novoCaminho = "gamex/gamex7.png";
@@ -72,7 +72,7 @@ function changeColor(color) {
         var novoCaminho = "gamex/gamex8.png";
         imagemgamex8.src = novoCaminho;
         var imagemgamex9 = document.getElementById("altera9");
-        var novoCaminho = "gamex/gamex9.png";
+        var novoCaminho = "gamex/gamexu6.png";
         imagemgamex9.src = novoCaminho;
 }
 
