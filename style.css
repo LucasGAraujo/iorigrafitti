@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* Estilos padrão */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: background-color 0.5s ease;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    top: 0;
+    transform: translateX(0%);
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Ajuste a largura conforme necessário */
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+.depoimentos{
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+}
+.estrela{
+    display: flex;
+
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+    width: calc(33.333% - 20px); /* Define a largura de cada cartão */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove a margem direita do último cartão para evitar quebrar a linha */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+.fa-star {
+    color: rgb(251, 255, 0); /* Cor verde */
+    font-size: 18px; /* Tamanho da estrela */
+}
+.card img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card h5 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card .data {
+    text-align: center;
+    color: #888;
+}
+/* Estilos para o cabeçalho */
+.iori-header {
+
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para o logo no cabeçalho */
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.iori-header.fixed {
+    position: fixed;
+    top: 0px; 
+    z-index: 1000; 
+    background-color: rgb(250, 252, 253);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);   
+
+}
+
+/* Estilos para o menu no cabeçalho */
+.menu-header {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a lista lateral do menu */
+.list-lateral-header {
+    height: 7vh;
+    font-weight: 600;
+    color: #ccb910;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+/* Estilos para os links no menu */
+.list-lateral-header a {
+    color: #ccb910 !important;
+    text-decoration: none;
+}
+
+/* Estilos para os ícones no menu */
+.list-lateral-header li img {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 10px;  
+}
+
+/* Estilos para o conteúdo principal */
+.iori-main {
+    margin: 20px auto;
+    width: 90%; 
+    border: 1px solid red;
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* Estilos para o carrossel */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    height: 70vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; 
+}
+
+.iorigrafitti-section {
+    text-align: center;
+    height: 18vh;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+.iorigrafitti-text {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 4em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.iorigrafitti-texts{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 4em;
+    color: #333;
+    margin: 20px auto;
+
+}
+.iorigrafitti-button {
+    background-color: #ccb910; /* yellow */
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.iorigrafitti-button:hover {
+    background-color: #10cc20; /* yellow */
+}
+.Sobre-iori{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55vh;
+    width: 65%;
+    margin: 0 auto;
+    background-color: #7f86802f;
+}
+
+.Sobre-iori section {
+    text-align: center ;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Sobre-iori h2 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Sobre-iori p {
+    font-size: 1.0em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.galery {
+            display: grid;
+            margin: 0 auto;
+            width: 60%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .galery img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .social-media ul li {
+            margin: 5px 0;
+        }
+        
+        .social-media ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+      /* Tablets (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .iori-header {
+        font-size: 14px;
+    }
+
+    .logo-header {
+        width: 30%;
+    }
+
+    .menu-header {
+        width: 40%;
+    }
+    
+}
+
+/* Celulares (até 767px) */
+@media only screen and (max-width: 767px) {
+    .iori-header {
+        font-size: 12px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo-header {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu-header {
+        width: 100%;
+    }
+
+    .list-lateral-header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .iori-main {
+        height: auto;
+    }
+
+    .carousel-item img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .Sobre-iori {
+        width: 90%;
+    }
+
+    .galery {
+        width: 100%;
+    }
+    .depoimentos {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 200px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .depoimentos .card {
+        width: 90%; /* ajuste a largura conforme necessário */
+        margin: 10px 0;
+    }
+    .Sobre-iori{
+        background-color: transparent ;
+        margin-bottom: 120px;
+    }
+    
+}

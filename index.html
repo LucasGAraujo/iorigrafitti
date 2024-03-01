@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/x-icon" href="img/pelicano.png">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Iori Grafitti - Grafitti Artístico</title>
+</head>
+<body>
+    <header class="iori-header" id="ioriHeader">
+        <div class="logo-header">
+            <h2>Iori Graffiti</h2>
+            
+        </div>
+        
+        <div class="menu-header">
+            <ul class="list-lateral-header">
+                <li><a href="tel:+21975093881"><img src="img/telefone.png" alt="Ícone Telefone">Ligar Agora</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5521975093881"><img src="img/documento-de-texto.png" alt="Ícone Cotação">Solicitar Cotação</a></li>
+                <li id="sobrenos"><a href="#"><img src="img/estudos-de-arte.png" alt="Ícone Trabalhos">Trabalhos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="iori-main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/1.jpeg" alt="Primeiro slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/2.jpg" alt="Segundo slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/3.jpeg" alt="Terceiro slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </main>
+    <section class="iorigrafitti-section">
+        <div class="iorigrafitti-text">
+            <p id="iorigrafitti-text">Iori Grafitti</p>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5521975093881" class="iorigrafitti-button">Solicitar Cotação</a>
+
+
+    </section>
+    <div class="depoimentos">
+        <div class="card" onclick="openModal('depoimento1')">
+            <div class="estrela">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+
+            <h5 id="nome1">Kelli O</h5>
+            <p id="comentario1">Iori Graffiti, uma referência para todos nós, trazendo sempre alegria e positividade em suas artes.
+
+            
+        </div>
+        <div class="card" onclick="openModal('depoimento2')">
+            <div class="estrela">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+
+            <h5 id="nome2">Lucas G</h5>
+            <p id="comentario2">Um artista excelente,fez uns trabalhos de grafite lindos para as minhas festas ,recomendo de olhos fechados</p>
+
+           
+        </div>
+        <div class="card" onclick="openModal('depoimento3')">
+            <div class="estrela">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            
+            <h5 id="nome3">Cristiane O</h5>
+            <p id="comentario3">Um profissional diferenciado...com qualidade e caprixooouuu</p>
+
+           
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" onclick="closeModal('depoimento1')">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('depoimento1')">&times;</span>
+            <h2>Kelli O</h2>
+            <p>Iori Graffiti, uma referência para todos nós, trazendo sempre alegria e positividade em suas artes.
+            </p>
+        </div>
+    </div>
+    
+    <div  class="modal" onclick="closeModal('depoimento2')">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('depoimento2')">&times;</span>
+            <h2>Lucas G</h2>
+            <p>Um artista excelente,fez uns trabalhos de grafite lindos para as minhas festas ,recomendo de olhos fechados</p>
+        </div>
+    </div>
+    
+    <div class="modal" onclick="closeModal('depoimento3')">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('depoimento3')">&times;</span>
+            <h2>Cristiane O</h2>
+            <p>Um profissional diferenciado...com qualidade e caprixooouuu</p>
+        </div>
+    </div>
+    
+    
+    <main class="Sobre-iori">
+        <section>
+            <img id="imagemgamex" src="img/Design sem nome.png" alt="Imagem logo" style="border-radius: 50%; max-width: 200px;">
+            <h2 id="classegamex">GRAFFITI (ARTE URBANA)</h2>
+            <p id="sobregamex">Com um legado que já dura 27 anos, onde através do mesmo, se envolve em projetos sociais e voluntários com crianças de periferia e comunidades, realizando trabalhos comerciais e artísticos, com a intenção de colorir e levar alegria à cidade de Niterói.</p>
+            <p id="sobregamex2">Trabalhamos com pintura de logótipos em fachadas e diversos ambientes comerciais: clínicas veterinárias, pet shops, escolas, hospitais, consultórios médicos, ambientes residenciais, etc. Para pintar, grafitar ou simplesmente fazer um letreiro ou logótipo em fachadas, por exemplo, utilizamos alguns métodos que serão escolhidos conforme a necessidade do cliente ou empresa.</p>
+        </section>
+    </main>
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <div class="iorigrafitti-texts">
+                <p>Galeria Grafitti</p>
+            </div>
+        </div>
+       
+  
+    <main class="galery">
+        <!-- Primeira linha de fotos -->
+        <img  id="altera1"src="https://lh3.googleusercontent.com/p/AF1QipNwSY77RobOHcb2KTtFpNrXhx6NouG_6Qg57T9t=s680-w680-h510" alt="Foto 1">
+        <img id="altera2" src="https://lh3.googleusercontent.com/p/AF1QipNIKzB5-YGCaxHAx1EuVkxnc5Y93meuvuqJUZKb=s680-w680-h510" alt="Foto 2">
+        <img id="altera3" src="https://lh3.googleusercontent.com/p/AF1QipM5ttUiDDGp4hcxIeCQltzqCKpmGcJdfbzFF2os=s680-w680-h510" alt="Foto 3">
+    
+        <!-- Segunda linha de fotos -->
+        <img  id="altera4" src="https://lh3.googleusercontent.com/p/AF1QipPg2b5aQy19tMdSkK_8X69ldJ_DOZYqfJm21K0h=s680-w680-h510" alt="Foto 4">
+        <img id="altera5" src="https://lh3.googleusercontent.com/p/AF1QipPxhXmSvJsXyxAkcLG8J-J9JzyPNnpHdUukVwu2=s680-w680-h510" alt="Foto 5">
+        <img id="altera6" src="https://lh3.googleusercontent.com/p/AF1QipOJCbf2_-eat_uiiqfUYqytxHuhb330XvSdKcB0=s680-w680-h510" alt="Foto 6">
+    
+        <!-- Terceira linha de fotos -->
+        <img  id="altera7" src="https://lh3.googleusercontent.com/p/AF1QipMTUWF_-mDW2lxh3nhM_WQBRBxvt6ehpbENuI35=s680-w680-h510" alt="Foto 7">
+        <img id="altera8" src="https://lh3.googleusercontent.com/p/AF1QipP0FCLufYhsmjUkrEbbLic7swxzD2R2AYfcG5mB=s680-w680-h510" alt="Foto 8">
+        <img id="altera9" src="https://lh5.googleusercontent.com/p/AF1QipPfqytKqPpFPaoy8Hy1w5QfvhndlnlUkN20B18R=w141-h101-n-k-no-nu" alt="Foto 9">
+    </main>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <div class="iorigrafitti-texts">
+            <button onclick="changeColor('#d8b7ff')">Conheça a gamex</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Iori Grafitti - Transformando ideias em arte desde 1996</p>
+                <p>Contato: 21 975093881</p>
+            </div>
+            <div class="social-media">
+                <p>Siga-nos nas redes sociais: @iorigamex</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/iorigamex" target="_blank">Instagram: @iorigamex</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
